@@ -143,13 +143,13 @@ class Supplier{
                 supAdress         = :supAdress
         where   supID = :supID"
         ,[
-            "supID"             => $supID,
-            "supMaxDelivery"    => $supMaxDelivery,
-            "supMinDelivery"    => $supMinDelivery,
-            "ingredID"          => $ingredID,
-            "ingredName"        => $ingredName,
+            "supID" => $supID,
+            "supMaxDelivery" => $supMaxDelivery,
+            "supMinDelivery" => $supMinDelivery,
+            "ingredID" => $ingredID,
+            "ingredName" => $ingredName,
             "ingredDescription" => $ingredDescription,
-            "supAdress"         => $supAdress
+            "supAdress" => $supAdress
         ]);
 
         echo "<p>De leverancier is gewijzigd. <br /></p>";
@@ -180,8 +180,26 @@ class Supplier{
         }
     }
 
+    public function searchSupAdress($supAdress){
+        $db = new Database("localhost","root","","project8");
+
+        // checken waar Artikel omschrijving in de database overeenkomt met de gegeven omschrijving
+        $suppliers = $db->SQLCommando("select * from suppliers where supAdress = :supAdress", ["supAdress" => $supAdress]);
+    
+        // artikel gegevens opvragen
+        foreach ($suppliers as $sup) {
+            $this->supID = $sup["supID"];
+            $this->supMaxDelivery = $sup["supMaxDelivery"];
+            $this->supMinDelivery = $sup["supMinDelivery"];
+            $this->ingredID = $sup["ingredID"];
+            $this->ingredName = $sup["ingredName"];
+            $this->ingredDescription = $sup["ingredDescription"];
+            $this->supAdress = $sup["supAdress"];
+        }
+    }
+
     public function searchSupplierIngredName($ingredName){
-        $db = new Database("localhost","root","","project6");
+        $db = new Database("localhost","root","","project8");
 
         // checken waar Artikel omschrijving in de database overeenkomt met de gegeven omschrijving
         $suppliers = $db->SQLCommando("select * from suppliers where ingredName = :ingredName", ["ingredName" => $ingredName]);
