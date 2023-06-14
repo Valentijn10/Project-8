@@ -1,6 +1,8 @@
 <?php
 require 'connect.php';
 
+// Vincent Kroon
+
 class Login{
     private string $loginName;
     private string $loginPassword;
