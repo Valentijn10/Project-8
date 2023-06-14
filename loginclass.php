@@ -35,7 +35,7 @@ class Login{
         $TheSame = password_verify($this->loginPassword, $HashedPassword);
 
         if($TheSame){
-            header("Location: http://localhost/Project-8/crud.php");
+            header("Location: http://localhost/Project-8/main.php");
         } else{
             echo "We hebben u niet gevonden, probeer opnieuw.";
         }
