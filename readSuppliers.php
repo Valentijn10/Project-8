@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Read Supplier</h1>
         <?php
         require "Suppliers.php";
 

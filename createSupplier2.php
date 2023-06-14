@@ -11,6 +11,7 @@
 
     </header>
     <main>
+        <h1>Creëer Leverancier stap 2</h1>
         <?php
         require "Suppliers.php";
 

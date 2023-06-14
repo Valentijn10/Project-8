@@ -10,6 +10,7 @@
 </head>
 <body>
 <main>
+    <h1>Delete Supplier stap 2</h1>
     <?php
     // klantid uit het formulier halen
     $supid = $_POST["supidvak"];

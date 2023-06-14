@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Leverancier Adress</h1>
         <?php
         // sup adress uit het formulier halen
         $supAdress = $_POST["supadressvak"];

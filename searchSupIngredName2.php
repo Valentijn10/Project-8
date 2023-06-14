@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Ingrediënt Levering stap 2</h1>
         <?php
         // ingred name uit het formulier halen
         $ingredName = $_POST["ingrednamevak"];

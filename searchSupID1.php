@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Leverancier ID stap 1</h1>   
         <form class="form-container" action="searchSupID2.php" method="post">
             Welk Leverancier Id wilt u zoeken?
             <input type="number" name="supidvak"> <br>

@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Pas een Leverancier aan stap 1</h1>
         <form class="form-container" action="updateSupplier2.php" method="post">
             Welk Leverancier id wilt u wijzigen?
             <input type="number" name="supidvak"> <br>

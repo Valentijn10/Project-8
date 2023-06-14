@@ -11,6 +11,7 @@
 
     </header>
     <main>
+        <h1>Creëer Leverancier stap 1</h1>
         <form action="createSupplier2.php" method="post">
                 Leverancier Maximale Bestelling:<input type="number"   name="supmaxdeliveryvak">      <br>
                 Leverancier Minimale Bestelling:<input type="number"   name="supmindeliveryvak">      <br>

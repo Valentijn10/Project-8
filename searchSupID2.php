@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Leverancier ID stap 2</h1>
         <?php
         // supid uit het formulier halen
         $supID = (int)$_POST["supidvak"];

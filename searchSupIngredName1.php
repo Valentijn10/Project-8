@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Ingrediënt Levering stap 1</h1>
         <form class="form-container" action="searchSupIngredName2.php" method="post">
             Welke ingrediënt naam wilt u zoeken in leveranciers?
             <input type="text" name="ingrednamevak"> <br>

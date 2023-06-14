@@ -10,6 +10,7 @@
 </head>
 <body>
 <main>
+    <h1>Delete Supplier stap 3</h1>
     <?php 
     // gegevens uit het formulier halen
     $supID = (int)$_POST["supidvak"];

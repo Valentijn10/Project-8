@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Zoek Leverancier Adress</h1>
         <form class="form-container" action="searchSupAdress2.php" method="post">
             Welk leverancier adress wilt u zoeken?
             <input type="text" name="supadressvak"> <br>

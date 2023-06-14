@@ -10,6 +10,7 @@
 </head>
 <body>
     <main>
+        <h1>Pas een Leverancier aan stap 2</h1>
         <?php
         // supplier id uit het formulier halen
         $supID = (int)$_POST["supidvak"];
