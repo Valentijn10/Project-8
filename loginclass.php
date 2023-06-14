@@ -40,16 +40,6 @@ class Login{
             echo "We hebben u niet gevonden, probeer opnieuw.";
         }
     }
-
-    // public function deleteAccount($loginName, $loginPassword){
-    //     $db = new Database("localhost","root","","project8");
-        
-    //     // Gegevens vergelijken met de juiste accounts
-    //     $db->SQLCommando("delete from accounts where (loginName = :loginName, loginPassword = :loginPassword)"
-    //     , ["loginName" => $loginName, 
-    //     "loginPassword" => $loginPassword]);
-    // }
-
 }
 
 ?>
