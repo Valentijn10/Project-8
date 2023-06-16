@@ -8,7 +8,7 @@ class Login{
     private string $loginPassword;
 
     public function __construct($loginName="", $loginPassword=""){
-        $this->$loginName = $loginName;
+        $this->loginName = $loginName;
         $this->loginPassword = $loginPassword;
     }
 
