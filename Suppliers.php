@@ -134,7 +134,7 @@ class Supplier{
         // Veranderen van de gegevens in de database gebaseerd op de gegeven supplier id
         $db->SQLCommando(
         "update suppliers set
-                supID  = :supID,
+                supID             = :supID,
                 supMaxDelivery    = :supMaxDelivery,
                 supMinDelivery    = :supMinDelivery,
                 ingredID          = :ingredID,
