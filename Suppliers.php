@@ -158,17 +158,17 @@ class Supplier{
     public function deleteSupplier($supID){
         $db = new Database("localhost","root","","project8");
         
-        // Checken waar de artikel id in de database overeenkomt met de gegeven artikel id
+        // Checken waar de supplier id in de database overeenkomt met de gegeven supplier id
         $db->SQLCommando("delete from suppliers where supID  = :supID", ["supID" => $supID]);
     }
     
     public function searchSupID($supID){
         $db = new Database("localhost","root","","project8");
 
-        // Zoeken op Artikel ID in de database
+        // Zoeken op supplier ID in de database
         $suppliers = $db->SQLCommando("select * from suppliers where supID = :supID", ["supID" => $supID]);
     
-        // artikel gegevens opvragen
+        // supplier gegevens opvragen
         foreach ($suppliers as $sup) {
             $this->supID = $sup["supID"];
             $this->supMaxDelivery = $sup["supMaxDelivery"];
@@ -183,10 +183,10 @@ class Supplier{
     public function searchSupAdress($supAdress){
         $db = new Database("localhost","root","","project8");
 
-        // checken waar Artikel omschrijving in de database overeenkomt met de gegeven omschrijving
+        // checken waar supplier omschrijving in de database overeenkomt met de gegeven adress
         $suppliers = $db->SQLCommando("select * from suppliers where supAdress = :supAdress", ["supAdress" => $supAdress]);
     
-        // artikel gegevens opvragen
+        // supplier gegevens opvragen
         foreach ($suppliers as $sup) {
             $this->supID = $sup["supID"];
             $this->supMaxDelivery = $sup["supMaxDelivery"];
@@ -201,10 +201,10 @@ class Supplier{
     public function searchSupplierIngredName($ingredName){
         $db = new Database("localhost","root","","project8");
 
-        // checken waar Artikel omschrijving in de database overeenkomt met de gegeven omschrijving
+        // checken waar ingredient naam in de database overeenkomt met de gegeven ingredient naam
         $suppliers = $db->SQLCommando("select * from suppliers where ingredName = :ingredName", ["ingredName" => $ingredName]);
     
-        // artikel gegevens opvragen
+        // supplier gegevens opvragen
         foreach ($suppliers as $sup) {
             $this->supID = $sup["supID"];
             $this->supMaxDelivery = $sup["supMaxDelivery"];
